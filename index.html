@@ -37,10 +37,10 @@
                   <a class="navigation__second-list-search" href="#" title="Поиск"></a>
                 </li>
                 <li class="navigation__second-item">
-                  <a class="navigation__second-list-account" href="#">Вход</a>
+                  <a class="navigation__second-list-account sprite-entry" href="#"></a><span>Вход</span>
                 </li>
                 <li class="navigation__third-item">
-                  <a class="navigation__second-list-basket" href="#" title="Карзина">Пусто</a>
+                  <a class="navigation__second-list-basket sprite-basket" href="#" title="Корзина"></a><span>Пусто</span>
                 </li>
               </ul>
               <div class="telephone">
@@ -114,31 +114,35 @@
           </section>
           <section class="hits">
             <div class="hits__item">
+              <a class="hits__mini-hit"><img src="./img/hit.jpg"/></a>
               <div class="hits__image">
                 <img src="./img/goods/hits/1.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
               </div>
-              <span class="hits__price">310<a class="hits__price-icon" href="#"></a></span>
+             <b class="hits__price">310<a class="hits__price-icon sprite-R" href="#"></a><span class="price-kg">/кг</span></b>
               <p class="hits__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
             </div>
             <div class="hits__item">
+              <a class="hits__mini-hit"><img src="./img/hit.jpg"/></a>
               <div class="hits__image">
                 <img src="./img/goods/hits/2.jpg" width="267px" height="267px" alt="Сливочно-кофейное с кусочками шоколада" />
               </div>
-              <span class="hits__price">380<a class="hits__price-icon" href="#"></a></span>
+              <b class="hits__price">380<a class="hits__price-icon sprite-R" href="#"></a><span class="price-kg">/кг</span></b>
               <p class="hits__description">Сливочно-кофейное с кусочками шоколада</p>
             </div>
             <div class="hits__item">
+              <a class="hits__mini-hit"><img src="./img/hit.jpg"/></a>
               <div class="hits__image">
                 <img src="./img/goods/hits/3.jpg" width="267px" height="267px" alt="Сливочно-клубничное с присыпкой из белого шоколада" />
+                <b class="hits__price">355<a class="hits__price-icon sprite-R" href="#"></a><span class="price-kg">/кг</span></b>
               </div>
-              <span class="hits__price">355<a class="hits__price-icon" href="#"></a></span>
               <p class="hits__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
             </div>
             <div class="hits__item">
+              <a class="hits__mini-hit"><img src="./img/hit.jpg"/></a>
               <div class="hits__image">
                 <img src="./img/goods/hits/4.jpg" width="267px" height="267px" alt="Сливочное крем-брюле с карамельной подливкой" />
               </div>
-              <span class="hits__price">415<a class="hits__price-icon" href="#"></a></span>
+              <b class="hits__price">415<a class="hits__price-icon sprite-R" href="#"></a><span class="price-kg">/кг</span></b>
               <p class="hits__description">Сливочное крем-брюле с карамельной подливкой</p>
             </div>
           </section>
@@ -146,12 +150,24 @@
             <h2 class="seo__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
             <div class="seo__features">
               <div class="seo__column">
-                <p class="seo__description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                <p class="seo__description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                <div class="seo__item">
+                  <a href="#" class="seo__icons sprite-ice-cream"></a>
+                  <p class="seo__description">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+                </div>
+                <div class="seo__item">
+                  <a href="#" class="seo__icons sprite-leaf"></a>
+                  <p class="seo__description">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                </div>
               </div>
-              <div class="seo__column">
-                <p class="seo__description">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                <p class="seo__description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+              <div>
+                <div class="seo__item">
+                  <a href="#" class="seo__icons sprite-cow"></a>
+                  <p class="seo__description">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                </div>
+                <div class="seo__item">
+                  <a href="#" class="seo__icons sprite-thermometer"></a>
+                  <p class="seo__description">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+                </div>
               </div>
             </div>
           </section>
@@ -194,23 +210,24 @@
           <div class="page-footer__social">
             <ul class="social__items">
               <li class="social__item">
-                <a class="social__link" href="#" title="Наш твиттер">тв</a>
+                <a class="social__link sprite-twitter" href="#" title="Наш твиттер"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#" title="Наш Инстраграм">ин</a>
+                <a class="social__link sprite-insta" href="#" title="Наш Инстраграм"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#" title="Мы в фейсбук">фб</a>
+                <a class="social__link sprite-fb" href="#" title="Мы в фейсбук"></a>
               </li>
               <li class="social__item">
-                <a class="social__link" href="#" title="Мы вконтакте">вк</a>
+                <a class="social__link sprite-vk" href="#" title="Мы вконтакте"></a>
               </li>
             </ul>
           </div>
           <div class="documents">
+            <a href="#" class="link-heart sprite-heart"></a>
             <ul class="documents__items">
               <li class="documents__item">
-                <a class="documents__link" href="#">Для поставщиков</a>
+                <a class="documents__link link-bold" href="#">Для поставщиков</a>
               </li>
               <li class="documents__item">
                 <a class="documents__link" href="#">О производстве</a>
@@ -226,7 +243,7 @@
             </ul>
           </div>
           <div class="copyright">
-            <a class="copyright__logo" href="https://htmlacademy.ru/intensive/htmlcss">logo</a>
+            <a class="copyright__logo sprite-logoacademy" href="https://htmlacademy.ru/intensive/htmlcss"></a>
             <span class="copyright__description">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
           </div>
         </div>
