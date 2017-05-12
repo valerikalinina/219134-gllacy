@@ -17,57 +17,81 @@
     <div class="overlay">
     <div class="content-wrapper">
       <header class="page-header">
-        <div class='page-header__container'>
-          <div class="page-header__logo">
-            <img src="img/logo.png" width="154px" height="64px" alt="Gllacy Shop" />
-          </div>
           <nav class="navigation">
-            <div class="navigation__top">
-              <ul class="navigation__items">
-                <li class="navigation__item navigation__link__catalog-link">
-                  <a class="navigation__link" href="catalog.html">Каталог</a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link" href="#">Доставка и оплата</a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link" href="#">О Компании</a>
-                </li>
-              </ul>
-              <ul class="navigation__second-list">
-                <li class="navigation__first-item">
-                  <a class="navigation__second-list-search" href="#" title="Поиск"></a>
-                </li>
-                <li class="navigation__second-item">
-                  <a class="navigation__second-list-account sprite-entry" href="#"></a><span>Вход</span>
-                </li>
-                <li class="navigation__third-item">
-                  <a class="navigation__second-list-basket sprite-basket" href="#" title="Корзина"></a><span>Пусто</span>
-                </li>
-              </ul>
+            <div class="navigation__left">
+            <div class="page-header__logo">
+              <a href="index.html"><img src="img/logo.png" width="154px" height="64px" alt="Gllacy Shop" /></a>
+            </div>
+                <ul class="navigation__items">
+                  <li class="navigation__item navigation__item--open-js">
+                    <a class="navigation__link" href="catalog.html">Каталог</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">Доставка и оплата</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="navigation__link" href="#">О Компании</a>
+                  </li>
+                </ul>
+                <div class="hidden-list">
+                  <ul class="hidden-list__nav">
+                    <li class="hidden-list__item">
+                      <a class="hidden-list__link first-link" href="#">Новинки</a>
+                    </li>
+                    <li class="hidden-list__item hidden-list__item-active">
+                      <a class="hidden-list__link" href="catalog.html">Сливочное</a>
+                    </li>
+                    <li class="hidden-list__item">
+                      <a class="hidden-list__link" href="#">Щербеты</a>
+                    </li>
+                    <li class="hidden-list__item">
+                      <a class="hidden-list__link" href="#">Фруктовый лёд</a>
+                    </li>
+                    <li class="hidden-list__item">
+                      <a class="hidden-list__link" href="#">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+                <div class="navigation__right">
+                <ul class="navigation__second-list">
+                  <li class="navigation__first-item">
+                    <a class="navigation__second-list-search" href="#" title="Поиск"></a>
+                  </li>
+                  <li class="navigation__second-item navigation__second-item--open-js">
+                    <a class="navigation__second-list-account sprite-entry" href="#"></a><span class="entry">Вход</span>
+                  </li>
+                  <li class="navigation__third-item">
+                    <a class="navigation__second-list-basket sprite-basket" href="#" title="Корзина"></a><span class="empty">Пусто</span>
+                  </li>
+                </ul>
+              <div class="basket--hidden">
+                <div class="basket__goods">
+                  <div class="basket__goods-item">
+                    <span class="basket__close"></span>
+                    <div>
+                    <img src="./img/ice1.jpg" alt="Пломбир с апельсиновым джемом"/>
+                  </div>
+                    <p class="basket__describtion">Пломбир с апельсиновым джемом</p>
+                    <span class="basket__quantity">200 руб.</span>
+                    <span class="basket__price--mini">300 руб.</span>
+                  </div>
+                  <div class="basket__goods-item">
+                    <span class="basket__close"></span>
+                    <div>
+                      <img src="./img/ice2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада"/>
+                    </div>
+                    <p class="basket__describtion">Клубничный пломбир с присыпкой из белого шоколада</p>
+                    <span class="basket__quantity">300 руб.</span>
+                    <span class="basket__price--mini">450 руб.</span>
+                  </div>
+                </div>
+                <span class="basket__price">Итого 750 руб.</span>
+                <a href="#" class="btn__order">Оформить заказ</a>
+              </div>
               <div class="telephone">
                 <a class="navigation__telephone" href="tel:+78124502525">8 812 450-25-25</a>
               </div>
-            </div>
-            <div class="hidden-list">
-              <ul class="hidden-list__nav">
-                <li class="hidden-list__item">
-                  <a class="hidden-list__link first-link" href="#">Новинки</a>
-                </li>
-                <li class="hidden-list__item">
-                  <a class="hidden-list__link" href="#">Сливочное</a>
-                </li>
-                <li class="hidden-list__item">
-                  <a class="hidden-list__link" href="#">Щербеты</a>
-                </li>
-                <li class="hidden-list__item">
-                  <a class="hidden-list__link" href="#">Фруктовый лёд</a>
-                </li>
-                <li class="hidden-list__item">
-                  <a class="hidden-list__link" href="#">Мелорин</a>
-                </li>
-              </ul>
-            </div>
             <div class="search-hidden">
               <input type="search" value="Что ищем?" autofocus/>
             </div>
@@ -82,8 +106,8 @@
                 </div>
               </div>
             </div>
+            </div>
           </nav>
-        </div>
       </header>
       <main>
         <section class="slider">
@@ -121,38 +145,58 @@
             </div>
           </section>
           <section class="hits">
-            <div class="hits__item">
-              <a class="hits__mini-hit"><img src="./img/hit.jpg"/></a>
-              <div class="hits__image">
-                <img src="./img/goods/hits/1.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
+            <article class="goods__item">
+              <div class="goods__overlay">
+                <a class="btn__preview" href="#">Быстрый просмотр</a>
               </div>
-             <b class="hits__price">310<a class="hits__price-icon sprite-R" href="#"></a><span class="price-kg">/кг</span></b>
-              <p class="hits__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-            </div>
-            <div class="hits__item">
-              <a class="hits__mini-hit"><img src="./img/hit.jpg"/></a>
-              <div class="hits__image">
-                <img src="./img/goods/hits/2.jpg" width="267px" height="267px" alt="Сливочно-кофейное с кусочками шоколада" />
+              <a class="goods__link" class="#">
+                <div class="hits__mini-hit"><img class="hits__mini-hit-img" src="./img/hit.jpg" width="61px" height="61px"/></div>
+                <img src="./img/goods/1/1.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
+                <div class="price">
+                  <span class="goods__price">310</span>
+                </div>
+                <p class="goods__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              </a>
+            </article>
+            <article class="goods__item">
+              <div class="goods__overlay">
+                <a class="btn__preview" href="#">Быстрый просмотр</a>
               </div>
-              <b class="hits__price">380<a class="hits__price-icon sprite-R" href="#"></a><span class="price-kg">/кг</span></b>
-              <p class="hits__description">Сливочно-кофейное с кусочками шоколада</p>
-            </div>
-            <div class="hits__item">
-              <a class="hits__mini-hit"><img src="./img/hit.jpg"/></a>
-              <div class="hits__image">
-                <img src="./img/goods/hits/3.jpg" width="267px" height="267px" alt="Сливочно-клубничное с присыпкой из белого шоколада" />
-                <b class="hits__price">355<a class="hits__price-icon sprite-R" href="#"></a><span class="price-kg">/кг</span></b>
+              <a class="goods__link" class="#">
+                <div class="hits__mini-hit"><img class="hits__mini-hit-img" src="./img/hit.jpg" width="61px" height="61px"/></div>
+                <img src="./img/goods/1/2.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
+                <div class="price">
+                  <span class="goods__price">380</span>
+                </div>
+                <p class="goods__description">Сливочно-кофейное с кусочками шоколада</p>
+              </a>
+            </article>
+            <article class="goods__item">
+              <div class="goods__overlay">
+                <a class="btn__preview" href="#">Быстрый просмотр</a>
               </div>
-              <p class="hits__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
-            </div>
-            <div class="hits__item">
-              <a class="hits__mini-hit"><img src="./img/hit.jpg"/></a>
-              <div class="hits__image">
-                <img src="./img/goods/hits/4.jpg" width="267px" height="267px" alt="Сливочное крем-брюле с карамельной подливкой" />
+              <a class="goods__link" class="#">
+                <div class="hits__mini-hit"><img class="hits__mini-hit-img" src="./img/hit.jpg" width="61px" height="61px"/></div>
+                <img src="./img/goods/1/3.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
+                <div class="price">
+                  <span class="goods__price">355</span>
+                </div>
+                <p class="goods__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              </a>
+            </article>
+            <article class="goods__item">
+              <div class="goods__overlay">
+                <a class="btn__preview" href="#">Быстрый просмотр</a>
               </div>
-              <b class="hits__price">415<a class="hits__price-icon sprite-R" href="#"></a><span class="price-kg">/кг</span></b>
-              <p class="hits__description">Сливочное крем-брюле с карамельной подливкой</p>
-            </div>
+              <a class="goods__link" class="#">
+                <div class="hits__mini-hit"><img class="hits__mini-hit-img" src="./img/hit.jpg" width="61px" height="61px"/></div>
+                <img src="./img/goods/1/4.jpg" width="267px" height="267px" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" />
+                <div class="price">
+                  <span class="goods__price">415</span>
+                </div>
+                <p class="goods__description">Сливочное крем-брюле с карамельной подливкой</p>
+              </a>
+            </article>
           </section>
           <section class="seo">
             <h2 class="seo__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
@@ -181,14 +225,20 @@
           </section>
           <div class="news-distribution">
           <section class="news">
+            <div class="news__container">
               <span class="news__description">Новое в нашем блоге</span>
               <h2 class="news__title">10 способов сервировки фруктовых щербетов к столу</h2>
+            </div>
           </section>
           <section class="distribution">
-            <p class="distribution__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-            <div class="distribution__form">
-            <input type="email" placeholder="Электронная почта" autocomplete="on" tabindex="1" autofocus/>
-            <a class="btn btn__distribution" href="#">Отправить</a>
+            <div class="distribution__container">
+              <div>
+                <p class="distribution__description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+              </div>
+              <div class="distribution__form">
+              <input type="email" placeholder="Электронная почта" autocomplete="on" tabindex="1" autofocus/>
+              <a class="btn btn__distribution" href="#">Отправить</a>
+              </div>
             </div>
           </section>
           </div>
@@ -198,9 +248,9 @@
                 <div id="yandex-map" class="yandex-map">
                 <div class="map__marker">
                 <div class="contacts">
-                  <span>Адрес главного офиса и офлайн магазина</span>
+                  <span>Адрес главного офиса</br> и офлайн магазина</span>
                   <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-                  <span>Для заказов по телефону:</span>
+                  <span class="contacts__order">Для заказов по телефону:</span>
                   <a class="contacts__telephone" href="tel:+78124502525">8 812 450-25-25</a>
                   <span>(с 10 до 20 ежедневно)</span>
                   <a class="btn btn__write-us" href="#">Форма обратной связи</a>

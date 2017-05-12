@@ -13,53 +13,54 @@
     <div class="overlay">
       <div class="content-wrapper">
         <header class="page-header">
-          <div class='page-header__container'>
-            <div class="page-header__logo">
-              <a href="index.html"><img src="img/logo.png" width="154px" height="64px" alt="Gllacy Shop" /></a>
-            </div>
             <nav class="navigation">
-              <div class="navigation__top">
-                <ul class="navigation__items">
-                  <li class="navigation__item navigation__item-catalog">
-                    <a class="navigation__link navigation__link__active" href="catalog.html">Каталог</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" href="#">Доставка и оплата</a>
-                  </li>
-                  <li class="navigation__item">
-                    <a class="navigation__link" href="#">О Компании</a>
-                  </li>
-                </ul>
-                <div class="hidden-list">
-                  <ul class="hidden-list__nav">
-                    <li class="hidden-list__item">
-                      <a class="hidden-list__link first-link" href="#">Новинки</a>
+              <div class="navigation__left">
+              <div class="page-header__logo">
+                <a href="index.html"><img src="img/logo.png" width="154px" height="64px" alt="Gllacy Shop" /></a>
+              </div>
+                  <ul class="navigation__items">
+                    <li class="navigation__item navigation__item--open-js navigation__item-catalog">
+                      <a class="navigation__link navigation__link__active" href="catalog.html">Каталог</a>
                     </li>
-                    <li class="hidden-list__item">
-                      <a class="hidden-list__link" href="#">Сливочное</a>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#">Доставка и оплата</a>
                     </li>
-                    <li class="hidden-list__item">
-                      <a class="hidden-list__link" href="#">Щербеты</a>
-                    </li>
-                    <li class="hidden-list__item">
-                      <a class="hidden-list__link" href="#">Фруктовый лёд</a>
-                    </li>
-                    <li class="hidden-list__item">
-                      <a class="hidden-list__link" href="#">Мелорин</a>
+                    <li class="navigation__item">
+                      <a class="navigation__link" href="#">О Компании</a>
                     </li>
                   </ul>
-                </div>
-                <ul class="navigation__second-list">
-                  <li class="navigation__first-item">
-                    <a class="navigation__second-list-search" href="#" title="Поиск"></a>
-                  </li>
-                  <li class="navigation__second-item">
-                    <a class="navigation__second-list-account sprite-entry" href="#"></a><span>Вход</span>
-                  </li>
-                  <li class="navigation__third-item">
-                    <a class="navigation__second-list-basket sprite-basket" href="#" title="Корзина"></a><span>Пусто</span>
-                  </li>
-                </ul>
+                  <div class="hidden-list">
+                    <ul class="hidden-list__nav">
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link first-link" href="#">Новинки</a>
+                      </li>
+                      <li class="hidden-list__item hidden-list__item-active">
+                        <a class="hidden-list__link link--active" href="#">Сливочное</a>
+                      </li>
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link" href="#">Щербеты</a>
+                      </li>
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link" href="#">Фруктовый лёд</a>
+                      </li>
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link" href="#">Мелорин</a>
+                      </li>
+                    </ul>
+                  </div>
+                  </div>
+                  <div class="navigation__right">
+                  <ul class="navigation__second-list">
+                    <li class="navigation__first-item">
+                      <a class="navigation__second-list-search" href="#" title="Поиск"></a>
+                    </li>
+                    <li class="navigation__second-item navigation__second-item--open-js">
+                      <a class="navigation__second-list-account sprite-entry" href="#"></a><span class="entry">Вход</span>
+                    </li>
+                    <li class="navigation__third-item-catalog navigation__third-item-catalog--open-js">
+                      <a class="navigation__second-list-basket sprite-basket2" href="#" title="Корзина"></a><span class="two-goods">2 товара</span>
+                    </li>
+                  </ul>
                 <div class="basket--hidden">
                   <div class="basket__goods">
                     <div class="basket__goods-item">
@@ -87,7 +88,6 @@
                 <div class="telephone">
                   <a class="navigation__telephone" href="tel:+78124502525">8 812 450-25-25</a>
                 </div>
-              </div>
               <div class="search-hidden">
                 <input type="search" value="Что ищем?" autofocus/>
               </div>
@@ -102,8 +102,8 @@
                   </div>
                 </div>
               </div>
+              </div>
             </nav>
-          </div>
         </header>
         <main>
           <div class="main__wrapper">
@@ -120,13 +120,12 @@
                 <div class="filter-form__section">
                   <div class="filter-form__legend">Сортировка:</div>
                   <div class="wish-filters">
-                    <input type="text" list="list-filters" name="list-filters" value="по популярности">
-                    <datalist id="list-filters">
-                    <option value="по популярности" checked>
-                    <option value="сначала недорогие">
-                    <option value="сначала дорогие">
-                    <option value="по жирности">
-                  </datalist>
+                    <select class="wish-filters__group">
+                    <option value="popularity" checked>по популярности</option>
+                    <option value="cheap">сначала недорогие</option>
+                    <option value="expensive">сначала дорогие</option>
+                    <option value="fatness">по жирности</option>
+                  </select>
                   </div>
                 </div>
                 <div class="filter-form__section">
@@ -397,10 +396,10 @@
           </div>
         </main>
 
-        <footer class="page-footer">
-          <div class="page-footer__container">
-            <div class="page-footer__social">
-              <ul class="social__items">
+        <footer class="page-footer--catalog">
+          <div class="page-footer__container--catalog">
+            <div class="page-footer__social--catalog">
+              <ul class="social__items--catalog">
                 <li class="social__item">
                   <a class="social__link sprite-twitter" href="#" title="Наш твиттер"></a>
                 </li>
@@ -435,7 +434,7 @@
               </ul>
             </div>
             <div class="copyright">
-              <a class="copyright__logo sprite-logoacademy" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+              <a class="copyright__logo--catalog sprite-logoacademy" href="https://htmlacademy.ru/intensive/htmlcss"></a>
               <span class="copyright__description">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</span>
             </div>
           </div>
