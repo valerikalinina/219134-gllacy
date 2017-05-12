@@ -22,6 +22,12 @@ body > input[type="radio"] {
   display: none;
 }
 
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover {
+  outline: #c7c6c5;
+}
+
 .site-wrapper {
   background-position: top center;
   background-repeat: no-repeat;
