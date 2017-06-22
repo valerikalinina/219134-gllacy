@@ -11,11 +11,11 @@
 </head>
 
 <body>
+
   <input type="radio" id="btn-1" name="toggle" checked/>
   <input type="radio" id="btn-2" name="toggle" />
   <input type="radio" id="btn-3" name="toggle" />
   <div class="site-wrapper">
-    <div class="overlay">
       <div class="content-wrapper">
         <header class="page-header">
           <nav class="navigation">
@@ -24,8 +24,27 @@
                 <a href="index.html"><img src="img/logo.png" width="154" height="64" alt="Gllacy Shop" /></a>
               </div>
               <ul class="navigation__items">
-                <li class="navigation__item navigation__item--open-js">
+                <li class="navigation__item navigation__item--open">
                   <a class="navigation__link" href="catalog.html">Каталог</a>
+                  <div class="hidden-list">
+                    <ul class="hidden-list__nav">
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link first-link" href="#">Новинки</a>
+                      </li>
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link" href="catalog.html">Сливочное</a>
+                      </li>
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link" href="#">Щербеты</a>
+                      </li>
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link" href="#">Фруктовый лёд</a>
+                      </li>
+                      <li class="hidden-list__item">
+                        <a class="hidden-list__link" href="#">Мелорин</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="navigation__item">
                   <a class="navigation__link" href="#">Доставка и оплата</a>
@@ -34,80 +53,84 @@
                   <a class="navigation__link" href="#">О Компании</a>
                 </li>
               </ul>
-              <div class="hidden-list">
-                <ul class="hidden-list__nav">
-                  <li class="hidden-list__item">
-                    <a class="hidden-list__link first-link" href="#">Новинки</a>
-                  </li>
-                  <li class="hidden-list__item hidden-list__item-active">
-                    <a class="hidden-list__link" href="catalog.html">Сливочное</a>
-                  </li>
-                  <li class="hidden-list__item">
-                    <a class="hidden-list__link" href="#">Щербеты</a>
-                  </li>
-                  <li class="hidden-list__item">
-                    <a class="hidden-list__link" href="#">Фруктовый лёд</a>
-                  </li>
-                  <li class="hidden-list__item">
-                    <a class="hidden-list__link" href="#">Мелорин</a>
-                  </li>
-                </ul>
-              </div>
             </div>
             <div class="navigation__right">
               <ul class="navigation__second-list">
-                <li class="navigation__first-item">
-                  <a class="navigation__second-list-search" href="#" title="Поиск"></a>
+                <li class="navigation__second-list-item">
+                  <div class="navigation__first-item">
+                    <a class="navigation__second-list-link navigation__second-list-search" href="#" title="Поиск"></a>
+                    <div class="search-hidden">
+                      <div class="input-form">
+                      <input type="search" placeholder="Что ищем?"/>
+                      <div class="label-box">
+                        <label>Что ищем?</label>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
                 </li>
-                <li class="navigation__second-item navigation__second-item--open-js">
-                  <a class="navigation__second-list-account sprite-entry" href="#"></a><span class="entry">Вход</span>
+                <li class="navigation__second-list-item">
+                  <div class="navigation__second-item">
+                    <a class="navigation__second-list-link navigation__second-list-account sprite-entry" href="#"></a><span class="entry">Вход</span>
+                    <div class="navigation__pop-up">
+                      <form class="form__pop-up" action="https://echo.htmlacademy.ru" method="post">
+                        <div class="input-form">
+                          <input type="email" id="form-mail" placeholder="Электронная почта" pattern="" autocomplete="on" tabindex="1"/>
+                          <div class="label-box">
+                            <label class="form__describtion">Электронная почта</label>
+                          </div>
+                        </div>
+                        <div class="input-form">
+                          <input type="password" id="password" placeholder="Пароль" autocomplete="on" tabindex="2"/>
+                          <div class="label-box">
+                            <label class="form__describtion">Пароль</label>
+                          </div>
+                        </div>
+                        <div class="btn-item">
+                          <a class="btn__popup-mini button-link" href="#">Войти</a>
+                          <div class="registration">
+                            <a class="registration__link" href="#">Забыли пароль?</a>
+                            <a class="registration__link" href="#">Новая регистрация</a>
+                            </div>
+                            </div>
+                       </form>
+                    </div>
+                  </div>
                 </li>
-                <li class="navigation__third-item">
-                  <a class="navigation__second-list-basket sprite-basket" href="#" title="Корзина"></a><span class="empty">Пусто</span>
+                <li class="navigation__second-list-item navigation__second-list-item">
+                  <div class="navigation__third-item">
+                    <a class="navigation__second-list-link navigation__second-list-basket sprite-basket" href="#" title="Корзина"></a><span class="empty">Пусто</span>
+                    <div class="basket--hidden">
+                      <div class="basket__goods">
+                        <div class="basket__goods-item">
+                          <span class="basket__close"></span>
+                          <div>
+                            <img src="./img/ice1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" />
+                          </div>
+                          <p class="basket__describtion">Пломбир с апельсиновым джемом</p>
+                          <span class="basket__quantity">200 руб.</span>
+                          <span class="basket__price--mini">300 руб.</span>
+                        </div>
+                        <div class="basket__goods-item">
+                          <span class="basket__close"></span>
+                          <div>
+                            <img src="./img/ice2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада" />
+                          </div>
+                          <p class="basket__describtion">Клубничный пломбир с присыпкой из белого шоколада</p>
+                          <span class="basket__quantity">300 руб.</span>
+                          <span class="basket__price--mini">450 руб.</span>
+                        </div>
+                      </div>
+                      <span class="basket__price">Итого 750 руб.</span>
+                      <a href="#" class="btn__order">Оформить заказ</a>
+                    </div>
+                  </div>
                 </li>
               </ul>
-              <div class="basket--hidden">
-                <div class="basket__goods">
-                  <div class="basket__goods-item">
-                    <span class="basket__close"></span>
-                    <div>
-                      <img src="./img/ice1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом" />
-                    </div>
-                    <p class="basket__describtion">Пломбир с апельсиновым джемом</p>
-                    <span class="basket__quantity">200 руб.</span>
-                    <span class="basket__price--mini">300 руб.</span>
-                  </div>
-                  <div class="basket__goods-item">
-                    <span class="basket__close"></span>
-                    <div>
-                      <img src="./img/ice2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада" />
-                    </div>
-                    <p class="basket__describtion">Клубничный пломбир с присыпкой из белого шоколада</p>
-                    <span class="basket__quantity">300 руб.</span>
-                    <span class="basket__price--mini">450 руб.</span>
-                  </div>
-                </div>
-                <span class="basket__price">Итого 750 руб.</span>
-                <a href="#" class="btn__order">Оформить заказ</a>
-              </div>
               <div class="telephone">
                 <a class="navigation__telephone" href="tel:+78124502525">8 812 450-25-25</a>
               </div>
-              <div class="search-hidden">
-                <input type="search" value="Что ищем?" autofocus/>
-              </div>
-              <div class="navigation__pop-up">
-                  <input type="email" placeholder="Электронная почта" autocomplete="on" tabindex="1"/>
-                  <input type="password" placeholder="Пароль" autocomplete="on" tabindex="2"/>
-                  <div class="btn-item">
-                    <buttom class="btn__popup-mini">Войти</buttom>
-                    <div class="registration">
-                      <a class="registration__link" href="#">Забыли пароль?</a>
-                      <a class="registration__link" href="#">Новая регистрация</a>
-                    </div>
                  </div>
-              </div>
-            </div>
           </nav>
         </header>
         <main>
@@ -254,19 +277,11 @@
               <span class="contacts__order">Для заказов по телефону:</span>
               <a class="contacts__telephone" href="tel:+78124502525">8 812 450-25-25</a>
               <span>(с 10 до 20 ежедневно)</span>
-              <a class="btn btn__write-us" href="#">Форма обратной связи</a>
+              <a class="btn__write-us" href="#">Форма обратной связи</a>
             </div>
           </div>
         </div>
       </section>
-      <div class="form-answer">
-        <h2 class="form-answer__title">Мы обязательно вам ответим!</h2>
-        <span class="form-answer__close"></span>
-        <input type="text" placeholder="Как вас зовут?" autocomplete="on" tabindex="0"/>
-        <input type="email" placeholder="Ваша почта для ответа?"/>
-        <textarea placeholder="Напишите что-нибудь..." name="comment" id="comment-field" rows="10"></textarea>
-        <buttom class="btn__js">Отправить</buttom>
-      </div>
       </main>
       <footer class="page-footer">
         <div class="page-footer__container">
@@ -311,12 +326,39 @@
           </div>
         </div>
       </footer>
+      <div class="overlay">
+        <div class="form-answer">
+          <form class="form-answer__form" action="#" method="post" novalidate>
+          <h2 class="form-answer__title">Мы обязательно вам ответим!</h2>
+          <buttom type="button" title="Закрыть"><span class="form-answer__close">Закрыть</span></buttom>
+          <div class="input-form">
+            <input class="form-name" id="form-name" type="text" name="form-name" placeholder="Как вас зовут?" autocomplete="on" tabindex="0" required/>
+            <div class="label-box">
+              <label>Как вас зовут</label>
+            </div>
+          </div>
+          <div class="input-form">
+            <input class="form-email" id="form-mail" type="email" name="form-email" placeholder="Ваша почта для ответа?" required/>
+            <div class="label-box">
+              <label>Ваша почта для ответа?</label>
+            </div>
+          </div>
+          <div class="input-form">
+          <textarea class="form-feedback" id="form-feedback" placeholder="Напишите что-нибудь..." name="comment" rows="10"></textarea>
+          <div class="label-box">
+            <label>Напишите что-нибудь...</label>
+          </div>
+          </div>
+          <buttom class="btn__js" type="submit" title="Отправить"><span class="btn__form-answer">Отправить</span></buttom>
+            </form>
+            </div>
       </div>
     </div>
-
+    </div>
       <script src="./js/jquery.js"></script>
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adec2f61a0b0ee5c2c97a8cd96b6c37806e7637e20644a3f9c7ba3dcf985f7b2b&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=false&id=yandex-map"></script>
-      <script src="./js/map.js"></script>
+      <script async src="./js/map.js"></script>
+      <script src="./js/script.js"></script>
 </body>
 
 </html>
